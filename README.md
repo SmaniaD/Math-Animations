@@ -22,6 +22,11 @@ Creates an animation of an isotopy in the unit disc between the identity and a h
 
 ![isotopy](https://github.com/SmaniaD/Math-Animations/blob/main/isotopy/isotopy_on_disc.gif)
 
+## associativity_pi_1
+This animation is to illustrate a step in the proof of the associativity of the group operation of the fundamental group.
+
+![motopy](https://github.com/SmaniaD/Math-Animations/blob/main/associativity_pi_1/homotopy.gif)
+
 
 
 
