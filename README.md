@@ -1,5 +1,5 @@
 # Math-Animations
-Animations with Python 
+Some Python scripts that generate animations to illustrate mathematical ideas.
 
 ## wavelet2d
 Create animation of 2d wavelets reconstructions
