@@ -2,23 +2,23 @@
 Some Python scripts that generate animations to illustrate mathematical ideas.
 
 ## wavelet2d
-Create animation of 2d wavelets reconstructions
+Creates animation of 2d wavelet reconstructions
 
 ![wavelet2d](https://github.com/SmaniaD/Math-Animations/blob/main/wavelet2d/wavelet2d.gif)
 
 ## wavelet
-Create animations of 1d wavelet reconstructions
+Creates animations of 1d wavelet reconstructions
 
 ![wavelet](https://github.com/SmaniaD/Math-Animations/blob/main/wavelet/wavelet.gif)
 
 
 ## tube_lemma
-Create animations of the proof of the Tube Lemma (in Point Set Topology)
+Creates animations of the proof of the Tube Lemma (in Point Set Topology)
 
 ![tube lemma](https://github.com/SmaniaD/Math-Animations/blob/main/tube_lemma/tube_lemma.gif)
 
 ## isotopy
-Create animation of an siotopy in the unit disc of the identity and a homeomorphims that permute two points
+Creates an animation of an isotopy in the unit disc between the identity and a homeomorphism that permutes two points.
 
 ![isotopy](https://github.com/SmaniaD/Math-Animations/blob/main/isotopy/isotopy_on_disc.gif)
 
