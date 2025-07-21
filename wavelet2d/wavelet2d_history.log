@@ -68,3 +68,9 @@
 [2025-07-19 17:44:41] python wavelet2d.py
 [2025-07-19 17:45:07] python wavelet2d.py
 [2025-07-20 00:12:51] python wavelet2d.py
+[2025-07-20 21:44:46] python wavelet2d.py
+[2025-07-20 21:46:44] python wavelet2d.py
+[2025-07-20 21:47:44] python wavelet2d.py --frames_per_wavelet 1
+[2025-07-20 21:48:30] python wavelet2d.py --frames_per_wavelet 1 --number_wavelets 64
+[2025-07-20 21:48:59] python wavelet2d.py --frames_per_wavelet 1 --number_wavelets 128
+[2025-07-20 21:49:57] python wavelet2d.py --frames_per_wavelet 1 --number_wavelets 128 --save gif
