@@ -16,5 +16,12 @@ Create animations of the proof of the Tube Lemma (in Point Set Topology)
 
 ![tube lemma](https://github.com/SmaniaD/Math-Animations/blob/main/tube_lemma/tube_lemma.gif)
 
+## isotopy
+Create animation of an siotopy in the unit disc of the identity and a homeomorphims that permute two points
+
+![isotopy](https://github.com/SmaniaD/Math-Animations/blob/main/isotopy/isotopy_on_disc.gif)
+
+
+
 
 
