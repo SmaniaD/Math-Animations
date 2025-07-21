@@ -1,0 +1,148 @@
+% -*- TeX -*-
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{fourier}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=teal,
+  pdfauthor={Daniel Smania},
+  pdftitle={Wavelet Animation Script - User Manual}
+}
+
+% Code‑listing setup
+\definecolor{bg}{RGB}{245,245,245}
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{bg},
+  frame=single,
+  breaklines=true,
+  columns=flexible,
+  keywordstyle=\color{teal}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{purple},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  xleftmargin=1.5em,
+  aboveskip=1em,
+  belowskip=1em
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Wavelet Animation Script User Manual}\\ \ \\  { \LARGE\bfseries Daniel Smania} \\[0.5em]
+Version: \texttt{1.0} \quad--\quad Last updated: \today \\
+
+\end{center}
+\vspace{1em}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+This script produces a frame-by-frame reconstruction of a one-dimensional function using discrete wavelet coefficients.\footnote{Source file: \texttt{wavelet.py}.} It is aimed at educators and researchers who wish to visualise how individual wavelets build up a signal.
+
+Key features:
+\begin{itemize}[nosep]
+  \item Generates random functions of several types (smooth, discontinuous, etc.).
+  \item Supports a wide range of discrete wavelets from PyWavelets.
+  \item Saves high-quality GIF or MP4 animations (optional).
+  \item Logs every execution for reproducibility (\texttt{wavelet\_history.log}).
+\end{itemize}
+
+\section{Prerequisites}
+\begin{itemize}[nosep]
+  \item \textbf{Python} $\ge$ 3.8
+  \item Packages: \texttt{numpy}, \texttt{matplotlib}, \texttt{pywt} (PyWavelets), \texttt{argparse} (standard), \texttt{pillow}.
+  \item To export MP4 you also need \href{https://ffmpeg.org/}{FFmpeg} in your \texttt{PATH}.
+\end{itemize}
+
+Install the scientific stack with:
+\begin{lstlisting}[language=bash]
+pip install numpy matplotlib pywavelets pillow
+
+# Optional for MP4 export
+sudo apt-get install ffmpeg   # Debian/Ubuntu
+\end{lstlisting}
+
+\section{Quick Start}
+\begin{lstlisting}[language=bash]
+python wavelet.py --wavelet_type db4 --function_type smooth_periodic --save gif
+\end{lstlisting}
+This command animates the first 64 \texttt{db4} wavelets reconstructing a periodic smooth signal and saves a GIF in the working directory.
+
+\section{Command-Line Options}
+\begin{description}[leftmargin=1.8cm, style=sameline]
+  \item[\texttt{--frames\_per\_wavelet}] Frames allocated to each wavelet coefficient. Controls animation speed. Default: \texttt{12}.
+  \item[\texttt{--wavelet\_type}] Wavelet family used by PyWavelets. Supported: \texttt{db4}, \texttt{db6}, \texttt{db8}, \texttt{haar}, \texttt{bior2.2}, \texttt{bior4.4}, \texttt{coif2}, \texttt{coif4}, \texttt{sym4}, \texttt{sym8}, \texttt{dmey}. Default: \texttt{haar}.
+  \item[\texttt{--function\_type}] Type of synthetic function: \texttt{smooth}, \texttt{piecewise\_linear}, \texttt{discontinuous}, \texttt{smooth\_periodic}, \texttt{mix}. Default: \texttt{smooth\_periodic}.
+  \item[\texttt{--function\_seed}] Integer seed for reproducible randomness. Default: \texttt{38324}.
+  \item[\texttt{--number\_wavelets}] Maximum number of coefficients to animate. Default: \texttt{64}.
+  \item[\texttt{--save}] Format for saving animation: \texttt{gif}, \texttt{mp4}, or \texttt{none}. Default: \texttt{none}.
+\end{description}
+
+\section{Output Files}
+\subsection*{Animation}
+When \texttt{--save} is \texttt{gif} or \texttt{mp4}, the script writes a file named:
+\begin{center}
+\texttt{wavelet-<YYYY-MM-DD-HH-MM-SS>-<wavelet>\_<func>\_<N>w\_<seed>s\_<F>f.(gif|mp4)}
+\end{center}
+
+\subsection*{Run History}
+Each command is logged to \texttt{wavelet\_history.log}. Only the 100 most recent entries are kept.
+
+\section{Examples}
+\subsection*{1. Fast preview without saving}
+\begin{lstlisting}[language=bash]
+python wavelet.py --wavelet_type sym4 --frames_per_wavelet 5 --number_wavelets 32
+\end{lstlisting}
+
+\subsection*{2. High-quality MP4}
+\begin{lstlisting}[language=bash]
+python wavelet.py \
+  --wavelet_type bior4.4 \
+  --function_type discontinuous \
+  --frames_per_wavelet 15 \
+  --number_wavelets 120 \
+  --save mp4
+\end{lstlisting}
+
+\section{Workflow Internals}
+\begin{enumerate}[label=\arabic*.]
+  \item Generate input signal $f$ using \texttt{random\_function()}.
+  \item Compute wavelet decomposition via \texttt{pywt.wavedec}.
+  \item For each animation frame:
+    \begin{enumerate}[nosep]
+      \item Build partial coefficient list with added wavelets.
+      \item Reconstruct $f_{\\text{partial}}$.
+      \item Overlay orange fill (wavelet being added) and blue fill (cumulative).
+    \end{enumerate}
+  \item Optionally export via Pillow (GIF) or FFmpeg (MP4).
+\end{enumerate}
+
+\section{Troubleshooting}
+\begin{description}[leftmargin=1.8cm, style=sameline]
+  \item[Missing FFmpeg] Ensure \texttt{ffmpeg} is installed and in your \texttt{PATH}.
+  \item[Large GIF files] Increase \texttt{frames\_per\_wavelet} or reduce \texttt{number\_wavelets}.
+  \item[Memory errors] Reduce \texttt{dpi} or figure size in the script.
+\end{description}
+
+\section{Extending the Script}
+\begin{itemize}[nosep]
+  \item Add new function types by editing \texttt{random\_function()}.
+  \item Try other PyWavelets wavelet families.
+  \item Replace generated signal with real data arrays.
+\end{itemize}
+
+\section*{License}
+MIT License – Feel free to adapt and redistribute with attribution.
+
+\end{document}

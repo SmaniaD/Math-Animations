@@ -1,0 +1,70 @@
+[2025-07-19 15:48:00] python wavelet2d.py
+[2025-07-19 15:49:13] python wavelet2d.py
+[2025-07-19 15:49:30] python wavelet2d.py --camera static_overview
+[2025-07-19 15:50:12] python wavelet2d.py --camera static_overview
+[2025-07-19 15:51:11] python wavelet2d.py --camera static_overview
+[2025-07-19 15:53:20] python wavelet2d.py --original_style wireframe --color_scheme marine --camera static_overview
+[2025-07-19 15:54:19] python wavelet2d.py --original_style wireframe --color_scheme marine --camera static_overview --number_wavelets 256
+[2025-07-19 15:54:55] python wavelet2d.py --original_style wireframe --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 3
+[2025-07-19 15:56:36] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 3
+[2025-07-19 15:58:12] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous
+[2025-07-19 15:59:02] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 256
+[2025-07-19 16:01:55] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 256
+[2025-07-19 16:06:34] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 256
+[2025-07-19 16:07:37] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 256
+[2025-07-19 16:09:21] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:09:55] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:10:06] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:14:19] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:14:35] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:14:54] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:15:15] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:16:23] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:17:00] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 256 --frames_per_wavelet 5 --function_type discontinuous --grid 64
+[2025-07-19 16:21:19] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:23:27] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:24:41] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:25:18] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 4 --function_type discontinuous --grid 64
+[2025-07-19 16:26:21] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 4 --function_type discontinuous --grid 256
+[2025-07-19 16:27:52] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 4 --function_type discontinuous --grid 256
+[2025-07-19 16:31:37] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 4 --function_type discontinuous --grid 256
+[2025-07-19 16:32:11] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:32:35] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type discontinuous --grid 64
+[2025-07-19 16:34:24] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type discontinuous --grid 64 --orientation portrait
+[2025-07-19 16:35:41] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type periodic_smooth --grid 64 --orientation portrait
+[2025-07-19 16:35:56] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth_periodic --grid 64 --orientation portrait
+[2025-07-19 16:39:10] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth_periodic --grid 128 --orientation portrait
+[2025-07-19 16:39:56] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 128 --orientation portrait
+[2025-07-19 16:40:42] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 128 --orientation portrait
+[2025-07-19 16:41:11] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:41:38] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 256 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:41:49] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 256 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:44:41] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 256 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:45:23] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:47:44] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:49:01] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:50:17] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:50:45] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:52:20] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:53:16] python wavelet2d.py --original_style gradient --color_scheme marine --camera rotating --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:56:19] python wavelet2d.py --original_style gradient --color_scheme marine --camera overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:56:37] python wavelet2d.py --original_style gradient --color_scheme marine --camera overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:58:55] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type piecewise_linear --grid 64
+[2025-07-19 16:59:27] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64
+[2025-07-19 17:00:37] python wavelet2d.py --original_style gradient --color_scheme marine --camera static_overview --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type db4
+[2025-07-19 17:01:59] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type db4
+[2025-07-19 17:02:47] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type dmey
+[2025-07-19 17:04:22] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type haar
+[2025-07-19 17:07:47] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 128 --wavelet_type haar
+[2025-07-19 17:17:20] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 128 --wavelet_type haar
+[2025-07-19 17:17:45] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type haar
+[2025-07-19 17:18:14] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type haar --single_wavelet 2d
+[2025-07-19 17:21:06] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type haar --single_wavelet 2d
+[2025-07-19 17:30:53] python wavelet2d.py --original_style gradient --color_scheme marine --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type haar --single_wavelet 2d
+[2025-07-19 17:35:40] python wavelet2d.py
+[2025-07-19 17:37:07] python wavelet2d.py --original_style gradient --color_scheme vibrant --number_wavelets 2048 --frames_per_wavelet 1 --function_type smooth --grid 64 --wavelet_type haar --single_wavelet 2d
+[2025-07-19 17:42:51] python wavelet2d.py
+[2025-07-19 17:43:55] python wavelet2d.py
+[2025-07-19 17:44:41] python wavelet2d.py
+[2025-07-19 17:45:07] python wavelet2d.py
+[2025-07-20 00:12:51] python wavelet2d.py
