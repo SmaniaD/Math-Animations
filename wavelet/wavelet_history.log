@@ -1,2 +1,23 @@
 [2025-07-20 21:57:15] python wavelet.py
 [2025-07-20 21:58:01] python wavelet.py --save gif
+[2025-07-21 16:18:04] python wavelet.py --frames_per_wavelet 1
+[2025-07-21 16:18:26] python wavelet.py --frames_per_wavelet 2
+[2025-07-21 16:18:53] python wavelet.py --frames_per_wavelet 2 --save gif
+[2025-07-21 16:20:07] python wavelet.py --frames_per_wavelet 2 --save gif
+[2025-07-21 16:20:33] python wavelet.py --frames_per_wavelet 2 --save gif
+[2025-07-21 16:21:01] python wavelet.py --frames_per_wavelet 2
+[2025-07-21 16:21:15] python wavelet.py --frames_per_wavelet 2 --save gif
+[2025-07-21 16:21:42] python wavelet.py --frames_per_wavelet 2 --save gif --function_seed 34
+[2025-07-21 16:22:17] python wavelet.py --frames_per_wavelet 2 --save gif --function_seed 34 --function_type smooth
+[2025-07-21 16:22:31] python wavelet.py --frames_per_wavelet 2 --save gif --function_seed 347 --function_type smooth
+[2025-07-21 16:22:48] python wavelet.py --frames_per_wavelet 2 --save gif --function_seed 3567 --function_type smooth
+[2025-07-21 16:23:15] python wavelet.py --frames_per_wavelet 2 --save gif --function_seed 3567 --function_type smooth_periodic
+[2025-07-21 16:23:36] python wavelet.py --frames_per_wavelet 2 --save gif --function_seed 3567 --function_type smooth
+[2025-07-21 16:24:07] python wavelet.py --frames_per_wavelet 2 --save gif --function_seed 356455 --function_type smooth
+[2025-07-21 16:24:47] python wavelet.py --frames_per_wavelet 2 --save gif --function_seed 356455 --function_type smooth --number_wavelets 128
+[2025-07-21 16:25:17] python wavelet.py --frames_per_wavelet 4 --save gif --function_seed 356455 --function_type smooth --number_wavelets 128
+[2025-07-21 16:26:12] python wavelet.py --frames_per_wavelet 4 --save gif --function_seed 356455 --function_type smooth --number_wavelets 64
+[2025-07-21 16:26:35] python wavelet.py --frames_per_wavelet 8 --save gif --function_seed 356455 --function_type smooth --number_wavelets 64
+[2025-07-21 16:28:02] python wavelet.py --frames_per_wavelet 8 --save mp4 --function_seed 356455 --function_type smooth --number_wavelets 64
+[2025-07-21 16:29:06] python wavelet.py --frames_per_wavelet 8 --save mp4 --function_seed 356455 --function_type smooth --number_wavelets 64 --wavelet_type db6
+[2025-07-21 16:29:52] python wavelet.py --frames_per_wavelet 8 --save mp4 --function_seed 356455 --function_type smooth --number_wavelets 64 --wavelet_type dmey

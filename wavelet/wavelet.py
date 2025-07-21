@@ -170,7 +170,7 @@ print(f"Total wavelets available: {total_wavelets_available}")
 print(f"Animating first {max_wavelets} wavelets")
 
 # Configuração da figura - reduced DPI for memory efficiency
-fig, ax = plt.subplots(figsize=(10, 6), dpi=80)
+fig, ax = plt.subplots(figsize=(5, 8), dpi=100)
 line_original, = ax.plot(x, f, 'gray', linewidth=2, alpha=0.7, label='Original')
 line_recon, = ax.plot(x, np.zeros_like(x), 'b', label='Reconstruction')
 ax.legend(loc='lower left')
