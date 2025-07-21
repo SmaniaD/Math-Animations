@@ -1,0 +1,126 @@
+% -*- TeX -*-
+\documentclass[12pt]{amsart}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{fourier}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=teal,
+  pdfauthor={Daniel Smania},
+  pdftitle={Wavelet Animation Script - User Manual}
+}
+
+% Code‑listing setup
+\definecolor{bg}{RGB}{245,245,245}
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{bg},
+  frame=single,
+  breaklines=true,
+  columns=flexible,
+  keywordstyle=\color{teal}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{purple},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  xleftmargin=1.5em,
+  aboveskip=1em,
+  belowskip=1em
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Associativity on $\pi_1$}\\ \ \\  { \LARGE\bfseries Daniel Smania} \\[0.5em]
+Version: \texttt{1.0} \quad--\quad Last updated: \today \\
+
+\end{center}
+\vspace{1em}
+
+This animation was created to explain why 
+$$
+\alpha \star (\beta \star \gamma) \simeq (\alpha \star \beta) \star \gamma
+$$
+in the fundamental group $\pi_1$, motivated by an answer we gave to a question on Mathematics Stack Exchange.
+
+The path $\alpha \star (\beta \star \gamma)$ evolves as follows:
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item During the first half of the interval $[0, 1/2]$, it travels along $\alpha$ at twice the original speed.
+
+    \item During the second half $[1/2, 1]$, it moves along $\beta \star \gamma$. More precisely:
+    \begin{enumerate}[label*=\arabic*.]
+        \item On $[1/2, 3/4]$, it moves along $\beta$ at four times the original speed.
+        \item On $[3/4, 1]$, it moves along $\gamma$ also at four times the original speed.
+    \end{enumerate}
+\end{enumerate}
+
+On the other hand, the path $(\alpha \star \beta) \star \gamma$ evolves as follows:
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item During the first half $[0, 1/2]$, it travels along $\alpha \star \beta$. In this interval:
+    \begin{enumerate}[label*=\arabic*.]
+        \item On $[0, 1/4]$, it moves along $\alpha$ at four times the original speed.
+        \item On $[1/4, 1/2]$, it moves along $\beta$ also at four times the original speed.
+    \end{enumerate}
+
+    \item During the second half $[1/2, 1]$, it moves along $\gamma$ at twice the original speed.
+\end{enumerate}
+\vspace{1em}
+
+Thus, in both cases the path moves through $\alpha$, $\beta$, and $\gamma$ in the same order, but with different speeds. The homotopy is constructed by continuously changing, with a parameter $s \in [0,1]$, the speeds at which we traverse each segment:
+
+- At $s=0$, we move through $\alpha$, $\beta$, and $\gamma$ at speeds $2x$, $4x$, $4x$ respectively.
+
+- At $s=1$, we move through them at speeds $4x$, $4x$, $2x$ respectively.
+
+To be more precise:
+
+- For fixed $s$, the map 
+  $$
+  \frac{4t}{2 - s}
+  $$
+  sends the interval $\left[0, \frac{2 - s}{4}\right]$ to $[0,1]$, with derivative $\frac{4}{2 - s}$. So at $s=0$ the derivative is $2$, and at $s=1$ it is $4$.
+
+- For fixed $s$, the map 
+  $$
+  4t + s - 2
+  $$
+  sends $\left[\frac{2 - s}{4}, \frac{3 - s}{4}\right]$ to $[0,1]$, with constant derivative $4$.
+
+- For fixed $s$, the map 
+  $$
+  \frac{4t + s - 3}{s + 1}
+  $$
+  sends $\left[\frac{3 - s}{4}, 1\right]$ to $[0,1]$, with derivative $\frac{4}{s + 1}$. At $s=0$ this is $4$, and at $s=1$ it is $2$.
+
+\vspace{1em}
+
+In other words, for every fixed $s$, the path $t \mapsto H(t,s)$ is just a reparametrization of the initial path $\omega = \alpha \star (\beta \star \gamma)$, moving at different "speeds". That is,
+$$
+H(t,s) = \omega(\theta_s(t)),
+$$
+where $\theta_s \colon [0,1] \to [0,1]$ is the homeomorphism defined by
+
+
+
+$$
+\theta_s(t) =
+\begin{cases}
+\displaystyle \frac{2t}{2 - s}, & t \in \left[0, \frac{2 - s}{4} \right], \\[1ex]
+\displaystyle t + \frac{s}{4}, & t \in \left[ \frac{2 - s}{4}, \frac{3 - s}{4} \right], \\[1ex]
+\displaystyle \frac{3}{4} + \frac{t + \frac{s}{4} - \frac{3}{4}}{s + 1}, & t \in \left[ \frac{3 - s}{4}, 1 \right].
+\end{cases}
+$$
+
+The Python script generates an animation that shows the deformation given by $\theta_s$ as $s$ varies from $0$ to $1$.
+
+\section*{License}
+MIT License – Feel free to adapt and redistribute with attribution.
+
+\end{document}
