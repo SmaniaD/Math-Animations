@@ -33,9 +33,8 @@ Given an open set V ⊂ ℝ² and a compact set K inside it, there is an open se
 its closure is inside V,  and its boundary is a disjoint union of Jordan curves. The details of the proof is explained 
 in [StackExchange Mathematics](https://math.stackexchange.com/questions/5085691/existence-of-jordan-curves-between-a-compact-and-an-open-set/5085711#5085711)
 
-<img src="https://github.com/SmaniaD/Math-Animations/blob/main/squares/squares.gif" width="200">
+<img src="https://github.com/SmaniaD/Math-Animations/blob/main/squares/squares.gif" width="600">
 
-![squqres](https://github.com/SmaniaD/Math-Animations/blob/main/squares/squares.gif)
 
 
 
