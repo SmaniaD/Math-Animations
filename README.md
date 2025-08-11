@@ -31,7 +31,7 @@ This animation is to illustrate a step in the proof of the associativity of the 
 This animation illustrated the proof of the following theorem:
 Given an open set V ⊂ ℝ² and a compact set K inside it, there is an open set U  that contains K,
 its closure is inside V,  and its boundary is a disjoint union of Jordan curves. The details of the proof is explained 
-in ![StackExcahnge Mathematics] (https://math.stackexchange.com/questions/5085691/existence-of-jordan-curves-between-a-compact-and-an-open-set/5085711#5085711)
+in [StackExcahnge Mathematics](https://math.stackexchange.com/questions/5085691/existence-of-jordan-curves-between-a-compact-and-an-open-set/5085711#5085711)
 
 ![squqres](https://github.com/SmaniaD/Math-Animations/blob/main/squares/squares.gif)
 
