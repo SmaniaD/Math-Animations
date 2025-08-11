@@ -13,7 +13,8 @@ Creates animations of 1d wavelet reconstructions
 
 
 ## tube_lemma
-Creates animations of the proof of the Tube Lemma (in Point Set Topology)
+Creates animations of the proof of the Tube Lemma (in Point Set Topology). It was used to 
+illustrate an answer in [StackExchange Mathematics](https://math.stackexchange.com/q/5082194)
 
 ![tube lemma](https://github.com/SmaniaD/Math-Animations/blob/main/tube_lemma/tube_lemma.gif)
 
