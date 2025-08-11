@@ -25,7 +25,7 @@ Details of the construction in [StackExchange Mathematics](https://math.stackexc
 
 ## associativity_pi_1
 This animation is to illustrate a step in the proof of the associativity of the group operation of the fundamental group. 
-Details in [StackExchange Mathematics]([https://math.stackexchange.com/q/5060224](https://math.stackexchange.com/q/5078811)
+Details in [StackExchange Mathematics](https://math.stackexchange.com/q/5078811)
 
 ![motopy](https://github.com/SmaniaD/Math-Animations/blob/main/associativity_pi_1/homotopy.gif)
 
